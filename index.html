@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minha Página Responsiva</title>
+    <!-- Link do Bootstrap via CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho com menu de navegação -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1 class="text-center">Minha Página Web</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo com 3 seções em containers do Bootstrap -->
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="p-4 border bg-light">
+                        <h2>Seção 1</h2>
+                        <p>Este é o texto da primeira seção. Use Bootstrap para tornar sua página visualmente agradável e responsiva.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="p-4 border bg-light">
+                        <h2>Seção 2</h2>
+                        <p>Esta é a segunda seção. Aqui você pode incluir mais informações sobre o conteúdo que deseja destacar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="p-4 border bg-light">
+                        <h2>Seção 3</h2>
+                        <p>Na terceira seção, adicione informações adicionais ou conteúdo complementar para os visitantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé com copyright -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; <span id="anoAtual"></span> Minha Página Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para atualizar o ano automaticamente -->
+    <script>
+        document.getElementById("anoAtual").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap JavaScript e dependências (via CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
